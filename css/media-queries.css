@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr) ;
+    grid-template-areas:
+                        "a";
+                        "b"
+                        "c"
+                        "d"
+                        "e"
+    width: 100vh;
+}
+.alert-info {
+    grid-area: a;
+}
+h1 {
+    grid-area: b;
+}
+.nav-links {
+    grid-area: c;
+}
+.main {
+    grid-area: d;
+}
+.sub-section {
+    grid-area: e;
+}
+#social-media-links {
+    grid-area: f;
+}
