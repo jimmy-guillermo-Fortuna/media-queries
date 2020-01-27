@@ -1,36 +1,28 @@
 * {
     box-sizing: border-box;
-    /*width: 100%;*/
+
 }
 body {
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 
-    /*grid-template-columns: 1fr;*/
-    /*grid-template-rows: repeat(6,1fr) ;*/
-    /*grid-template-areas:*/
-    /*                    "a";*/
-    /*                    "b"*/
-    /*                    "c"*/
-    /*                    "d"*/
-    /*                    "e"*/
-    width: 100vh;
+    height: 100vh;
 }
 
 body .alert-info a {
     color: black;
-    /*padding: 100px;*/
+
 }
 body nav li {
     list-style: none;
 }
 .alert-info {
-    grid-area: a;
+    /*grid-area: a;*/
     background-color: lightblue;
-    /*padding: 20px;*/
+    padding: 20px;
     text-decoration: none;
     border: #CCCCCC solid 2px;
     width: 500px;
@@ -39,13 +31,13 @@ body nav li {
 }
 
 .alert-info a {
-    margin: auto;
+    margin: 0 auto;
     text-decoration: none;
 
 }
 
 h1 {
-    grid-area: b;
+
 }
 
 .hidden-on-desktop {
@@ -56,7 +48,7 @@ h1 {
     height: 200px;
     width: 500px;
     text-align: center;
-    display: flex;
+    /*display: flex;*/
 
 }
 
@@ -74,45 +66,66 @@ h1 {
 
 }
 .main {
-    grid-area: d;
+
     height: 50px;
     width: 500px;
     text-align: center;
     margin-bottom: 100px;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+
 }
 
+.main h2, .sub-section h2{
+    text-align: left;
+
+}
+
+
 .sub-section {
-    grid-area: e;
-    height: 50px;
+
     width: 500px;
     text-align: center;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+
 
 }
 #social-media-links {
-    grid-area: f;
+    /*grid-area: f;*/
 }
 
 footer {
+    /*display: block;*/
+    /*width: 500px;*/
     /*margin-right: auto;*/
-    border: black 10px solid;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
+
+    width: 500px;
+    text-align: center;
+
+
+
 }
 p {
-    display: flex;
-    align-items: flex-start;
+    text-align: left;
+
+@media screen and (min-width:768px) {
+    body {
+        width: 768px;
+    }
+
+    }
 }
 
+@media screen and (min-width:992px) {
+    body .main {
+        width: 30%;
+        float: left;
+    }
+    body .sub-section {
+
+        float: right;
+    }
+}
 
 @media screen and (max-width:500px) {
     body {
-        background: black;
+        /*background: black;*/
     }
 }
