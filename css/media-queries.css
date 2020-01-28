@@ -61,7 +61,7 @@ footer {
     body {
         display: grid;
         height: 100vh;
-        grid-template-rows:1fr 2fr 2fr 1fr ;
+        grid-template-rows:100px 40% 35% 1fr ;
         /*grid-template-columns: 1fr 1fr;*/
         grid-template-areas:
                 "b a"
@@ -81,19 +81,32 @@ footer {
         text-align: left;
         margin-left: 10px;
     }
-    img {
+    .header-img {
         grid-area: c;
-
+        width: 96%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        margin: auto;
+        border: 2px black solid;
+    }
+    img {
+        height: 100%;
     }
     .main {
         grid-area: d;
+        margin: auto;
+        width: 94%;
 
     }
     .sub-section {
         grid-area: e;
+        margin: auto;
+        width: 94%;
     }
     footer{
         grid-area: f;
+        margin: auto;
     }
     li {
         display: inline-flex;
